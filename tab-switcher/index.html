@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" type="image/png" href="images/favicon/favicon.png" />
+    <title>Tab Switcher</title>
+  </head>
+  <body>
+    <div class="tab-container">
+      <div class="tab-buttons">
+        <button class="tab-button active" onclick="openTab(event, 'tab1')">
+          What is a capybara
+        </button>
+        <button class="tab-button" onclick="openTab(event, 'tab2')">
+          Distribution
+        </button>
+        <button class="tab-button" onclick="openTab(event, 'tab3')">
+          Images
+        </button>
+      </div>
+      <div id="tab1" class="tab-content" style="display: block">
+        <h2>What is a capybara</h2>
+        <p>
+          Capybaras have heavy, barrel-shaped bodies and short heads, and they
+          have reddish-brown fur on its upper body which passing to
+          yellowish-brown below. Adult capybaras reach up to 130 cm in length
+          and up to 65 kg in weight. There is information about a specimen with
+          weight 105.4 kg. Capybaras have slightly webbed feet, no tail and they
+          have 20 teeth. Their hind legs are slightly longer than their front
+          legs. The muzzles they are aligned with their eyes, nostrils and ears
+          on top of their heads. Females are slightly lighter than males.
+          Females weigh average from 34 to 61 kg, while males usually weigh from
+          36 to 66 kg.
+        </p>
+      </div>
+      <div id="tab2" class="tab-content">
+        <h2>Distribution</h2>
+        <p>
+          The capybara is found on the shores of various reservoirs in the
+          tropics and temperate parts of Central and South America, east of the
+          Andes - from Panama to Uruguay and to the northeastern parts of
+          Argentina (up to 38°17' Yu. sh., province of Buenos Aires).
+        </p>
+      </div>
+      <div id="tab3" class="tab-content">
+        <h2>Images</h2>
+        <ul class="images-container">
+          <li>
+            <img
+              src="https://cdn.pixabay.com/photo/2015/10/08/02/19/capybara-977101_640.jpg"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="https://gradcontent.com/lib/400x296/capybara2.webp"
+              alt="Капибарата"
+            />
+          </li>
+          <li>
+            <img
+              src="https://cdn2.amlima.com/zverk7/kapibara_9.webp"
+              alt="Капибарата"
+            />
+          </li>
+          <li>
+            <img
+              src="https://miau.bg/files/1200x800/capybara-grass.webp"
+              alt="Капибарата"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
