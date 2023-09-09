@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #145ad2;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("/images/popup-background.svg");
+}
+
+.popup-container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 800px;
+  padding: 0 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 120px #ffffff77;
+  background: radial-gradient(#145ad2, #6a00ff);
+  background-size: cover;
+  display: none;
+  animation: fade-in 500ms ease-in forwards;
+}
+
+.popup-header {
+  margin: 2rem 0;
+}
+
+.popup-header .header-title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.popup-body .body-text p {
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.popup-body .body-form {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.popup-body .body-form .form-control {
+  margin-bottom: 1rem;
+}
+
+.popup-body .body-form label {
+  color: #ffffff;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.popup-body .body-form input {
+  width: 100%;
+  display: inline-block;
+  padding: 14px;
+  outline: none;
+  font-size: 17px;
+  border: none;
+}
+
+.popup-body .body-form .confirm-button {
+  display: inline-block;
+  padding: 14px;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 500ms ease-in;
+}
+
+.popup-body .body-form .confirm-button:hover {
+  background-color: #6a00ff;
+  color: #ffffff;
+}
+
+.popup-footer {
+  margin-top: 2rem;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 24px;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 500ms ease-in;
+}
+
+.close-button:hover {
+  color: #f00;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
